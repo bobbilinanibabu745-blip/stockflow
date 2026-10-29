@@ -1,0 +1,192 @@
+
+/* ===== Settings Page ===== */
+
+.settings-page {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  width: 100%;
+  color: #172033;
+}
+
+/* Page heading */
+
+.settings-page .page-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.settings-page .eyebrow {
+  margin: 0 0 8px;
+  color: #2563eb;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.6px;
+}
+
+.settings-page .page-heading h1 {
+  margin: 0;
+  color: #172033;
+  font-size: 29px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.settings-page .subtitle {
+  margin: 9px 0 0;
+  color: #718096;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* Settings card */
+
+.settings-page .settings-card {
+  width: 100%;
+  max-width: 760px;
+  box-sizing: border-box;
+  padding: 28px;
+  border: 1px solid #e8edf4;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 3px 12px rgb(15 23 42 / 3%);
+}
+
+.settings-page .settings-card-heading {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #edf1f6;
+}
+
+.settings-page .settings-icon {
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.settings-page .settings-card-heading h2 {
+  margin: 0 0 7px;
+  color: #172033;
+  font-size: 17px;
+  font-weight: 750;
+}
+
+.settings-page .settings-card-heading p {
+  margin: 0;
+  color: #718096;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* Settings form */
+
+.settings-page .settings-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 13px;
+  padding-top: 24px;
+}
+
+.settings-page .settings-form label {
+  color: #374151;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.settings-page .settings-help {
+  max-width: 570px;
+  margin: 0;
+  color: #718096;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.settings-page .settings-form input {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 300px;
+  min-height: 46px;
+  padding: 12px 14px;
+  border: 1px solid #dce3ed;
+  border-radius: 9px;
+  outline: none;
+  background: #ffffff;
+  color: #172033;
+  font: inherit;
+  font-size: 14px;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.settings-page .settings-form input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgb(37 99 235 / 10%);
+}
+
+/* Save button */
+
+.settings-page .primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 43px;
+  margin-top: 8px;
+  padding: 11px 17px;
+  border: none;
+  border-radius: 9px;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.settings-page .primary-button:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+.settings-page .primary-button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.settings-page .settings-message {
+  margin: 4px 0 0;
+  color: #047857;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* Responsive layout */
+
+@media (max-width: 650px) {
+  .settings-page .page-heading h1 {
+    font-size: 25px;
+  }
+
+  .settings-page .settings-card {
+    padding: 20px;
+  }
+
+  .settings-page .settings-card-heading {
+    align-items: flex-start;
+  }
+
+  .settings-page .settings-form input {
+    max-width: none;
+  }
+}

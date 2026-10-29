@@ -1,0 +1,74 @@
+
+/* ===== Reusable Statistic Card ===== */
+
+.stat-card {
+  min-width: 0;
+  padding: 22px;
+  border: 1px solid #e8edf4;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 3px 12px rgb(15 23 42 / 3%);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgb(15 23 42 / 6%);
+}
+
+.stat-icon {
+  display: grid;
+  place-items: center;
+  width: 43px;
+  height: 43px;
+  margin-bottom: 17px;
+  border-radius: 12px;
+}
+
+.stat-icon.blue {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.stat-icon.purple {
+  background: #f3e8ff;
+  color: #9333ea;
+}
+
+.stat-icon.orange {
+  background: #fff7ed;
+  color: #ea580c;
+}
+
+.stat-icon.green {
+  background: #ecfdf5;
+  color: #059669;
+}
+
+.stat-card > p {
+  margin: 0 0 10px;
+  color: #718096;
+  font-size: 13px;
+}
+
+.stat-card h2 {
+  margin: 0 0 9px;
+  color: #172033;
+  font-size: 27px;
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+
+.stat-card > span {
+  color: #94a3b8;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .stat-card {
+    padding: 18px;
+  }
+}
