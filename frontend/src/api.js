@@ -1,5 +1,5 @@
 
-const API_BASE = "http://127.0.0.1:8000/api";
+const API_BASE = "https://stockflow-h9g3.onrender.com/api";
 
 let refreshPromise = null;
 
